@@ -992,7 +992,7 @@ header .navbar ul li a:hover {
   background: #1a047e;
 }
 .morebtn .btn:hover i {
-  transform: translateX(5px);
+  transform: translateX(5px) !important;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
