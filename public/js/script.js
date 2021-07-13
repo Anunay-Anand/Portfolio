@@ -134,18 +134,3 @@ srtop.reveal(".experience .timeline .container", { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal(".contact .container", { delay: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 400 });
-
-/* Tawk.to APi */
-// Start of Tawk.to Script
-let Tawk_API = Tawk_API || {},
-  Tawk_LoadStart = new Date();
-(function () {
-  let s1 = document.createElement("script"),
-    s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = "https://embed.tawk.to/60ed75a3649e0a0a5ccbf5d0/1fafp7262";
-  s1.charset = "UTF-8";
-  s1.setAttribute("crossorigin", "*");
-  s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Script
