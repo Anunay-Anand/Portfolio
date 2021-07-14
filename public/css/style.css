@@ -25,6 +25,14 @@ body {
   cursor: none;
 }
 
+/* Custom Pointer only */
+a,
+button,
+a:hover,
+button:hover {
+  cursor: none;
+}
+
 *::selection {
   background: #2b3dda;
   color: #fff;
