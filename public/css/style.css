@@ -19,6 +19,10 @@ html {
 body {
   background: #f7f7f7;
   font-family: "Poppins", sans-serif;
+  height: 100vh;
+  /* We need to add auto to make this work it acts as a fallback if logo isn't there */
+  /* cursor: url("../images/assassins-creed.png"), auto; */
+  cursor: none;
 }
 
 *::selection {
@@ -126,7 +130,7 @@ header .navbar ul li a:hover {
 /* hamburger icon starts*/
 #menu {
   font-size: 3rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: rgb(24, 2, 63);
   display: none;
 }
@@ -216,7 +220,7 @@ header .navbar ul li a:hover {
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -376,7 +380,7 @@ header .navbar ul li a:hover {
   /* Blend mode to create black and white image */
   mix-blend-mode: luminosity;
   transition: 0.3s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .about .row .image img:hover {
   mix-blend-mode: normal;
@@ -1144,7 +1148,7 @@ form .button-area {
   border: none;
   outline: none;
   font-size: 1.8rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   border-radius: 5px;
   padding: 13px 25px;
   background: #2506ad;
@@ -1329,3 +1333,73 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Cursoe Code starts */
+.cursor {
+  /* Position fixed as it allows the div to be fixed in screen while scrolling */
+  position: fixed;
+  z-index: 1500;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ff7b00;
+  border-radius: 50%;
+  /* so cursor never changes */
+  pointer-events: none;
+  /* transition to create a lag */
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnimation1 0.5s infinite alternate;
+  transform: translate(-50%, -50%);
+}
+
+.cursor::after {
+  content: "";
+  border-top: 8px solid #7303a7;
+  border-left: 8px solid #ce0505;
+  border-right: 8px solid #f7d203;
+  border-bottom: 8px solid #298521;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  top: -9px;
+  left: -9px;
+  animation: cursorAnimation2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnimation1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnimation2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnimation3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnimation3 0.5s forwards;
+  border: 1px solid red;
+}
