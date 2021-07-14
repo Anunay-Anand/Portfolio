@@ -134,23 +134,3 @@ srtop.reveal(".experience .timeline .container", { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal(".contact .container", { delay: 400 });
 srtop.reveal(".contact .container .form-group", { delay: 400 });
-
-{
-  /* Cursor Code */
-  const cursor = document.querySelector(".cursor");
-  // Adding style to the cursor location everytime it moves (faking cursor)
-  document.addEventListener("mousemove", (event) => {
-    cursor.setAttribute(
-      "style",
-      `top: ${event.pageY - scrollY - 10}px ; left: ${event.pageX - 10}px`
-    );
-  });
-
-  document.addEventListener("click", () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-      cursor.classList.remove("expand");
-    }, 500);
-  });
-}

@@ -60,6 +60,27 @@
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
     <!-- Developer Main Script file -->
     <script src="/js/script.js"></script>
+    <script>
+        {
+            /* Cursor Code */
+            const cursor = document.querySelector(".cursor");
+            // Adding style to the cursor location everytime it moves (faking cursor)
+            document.addEventListener("mousemove", (event) => {
+                cursor.setAttribute(
+                    "style",
+                    `top: ${event.pageY - scrollY - 10}px ; left: ${event.pageX - 10}px`
+                );
+            });
+
+            document.addEventListener("click", () => {
+                cursor.classList.add("expand");
+
+                setTimeout(() => {
+                    cursor.classList.remove("expand");
+                }, 500);
+            });
+        }
+    </script>
 </body>
 
 </html>

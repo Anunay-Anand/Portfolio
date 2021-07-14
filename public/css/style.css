@@ -30,10 +30,6 @@ body {
   color: #fff;
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -130,7 +126,7 @@ header .navbar ul li a:hover {
 /* hamburger icon starts*/
 #menu {
   font-size: 3rem;
-  /* cursor: pointer; */
+  cursor: none;
   color: rgb(24, 2, 63);
   display: none;
 }
@@ -220,7 +216,7 @@ header .navbar ul li a:hover {
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  /* cursor: pointer; */
+  cursor: none;
 }
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -380,7 +376,7 @@ header .navbar ul li a:hover {
   /* Blend mode to create black and white image */
   mix-blend-mode: luminosity;
   transition: 0.3s;
-  /* cursor: pointer; */
+  cursor: none;
 }
 .about .row .image img:hover {
   mix-blend-mode: normal;
@@ -1148,7 +1144,7 @@ form .button-area {
   border: none;
   outline: none;
   font-size: 1.8rem;
-  /* cursor: pointer; */
+  cursor: none;
   border-radius: 5px;
   padding: 13px 25px;
   background: #2506ad;
