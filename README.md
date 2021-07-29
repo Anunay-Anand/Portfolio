@@ -12,13 +12,13 @@ Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 
 Extras : Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawkto, Font Awesome, JSON, etc.
 ## 📌 Sneak Peek of Main Page 🙈 :
-mockup720 skillsmockup
+![portfolio](https://user-images.githubusercontent.com/55958223/127464057-345db24a-cdc4-4b84-8b3b-17121fd2df26.png)
 
-📬 Contact
+## 📬 Contact
 If you want to contact me, you can reach me through below handles.
-
+<a href="https://www.linkedin.com/in/anunay-anand/"><br><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   
 
-© 2021 Jigar Sable
+© 2021 Anunay Anand
 
-forthebadge
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
