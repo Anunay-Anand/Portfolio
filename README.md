@@ -7,7 +7,7 @@ Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-![JQuery](https://github.com/Anunay-Anand/Portfolio/image.jpg?raw=true)
+![JQuery](https://github.com/Anunay-Anand/Portfolio/jquery.svg?raw=true)
 
 
 Extras : Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawkto, Font Awesome, JSON, etc.
