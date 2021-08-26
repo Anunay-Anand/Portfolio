@@ -20,7 +20,17 @@ module.exports = [
     },
   },
   {
-    id: 3,
+    id: 4,
+    name: "Food Ordering App",
+    desc: "An app based on React.js, Routes as well as payment integration. It is still under development but do check it out.",
+    image: "/images/projects/food-app.png",
+    links: {
+      view: "https://react-food--app.herokuapp.com/",
+      code: "https://github.com/Anunay-Anand/food-app",
+    },
+  },
+  {
+    id: 4,
     name: "Online Notes Generator",
     desc: "An Online notes generator based on PHP, MYSQli. It has every authentication functionality with email verification to remember Me. PHP is awesome !!",
     image: "/images/projects/onlineNotesGenerator.png",
@@ -30,7 +40,7 @@ module.exports = [
     },
   },
   {
-    id: 4,
+    id: 5,
     name: "Online Transaction",
     desc: "Banking System based on PHP and MySQLi database. Storing all Customer transactions & responsive payments.",
     image: "/images/projects/onlinebanking.png",
@@ -40,7 +50,7 @@ module.exports = [
     },
   },
   {
-    id: 5,
+    id: 6,
     name: "NGO (Payment Gateway System)",
     desc: "It's a Ngo payment gatway website with credit card/paypal sandbox API. Payment details are sent to user via Email.",
     image: "/images/projects/paymentgateway.png",
@@ -50,7 +60,7 @@ module.exports = [
     },
   },
   {
-    id: 6,
+    id: 7,
     name: "Pepper Email Template",
     desc: "It's a fully responsive email template ready to hit your inbox. It has beautiful UX/UI.",
     image: "/images/projects/pepper.png",
@@ -60,7 +70,7 @@ module.exports = [
     },
   },
   {
-    id: 7,
+    id: 8,
     name: "Expense handler (React)",
     desc: "Expense handler based on React. It has expense bars as well year, month filter. A lot of useState !!",
     image: "/images/projects/expensehandler.png",
@@ -70,7 +80,7 @@ module.exports = [
     },
   },
   {
-    id: 8,
+    id: 9,
     name: "Mobile Shop",
     desc: "A Mobile Shop website with multiple categories filter functionality and much more. It's lovely isn't it",
     image: "/images/projects/mobileshop.png",
@@ -80,7 +90,7 @@ module.exports = [
     },
   },
   {
-    id: 9,
+    id: 10,
     name: "Monster Rolodex (React)",
     desc: "A React Project using Monster Api. Where you can select your fav Monster",
     image: "/images/projects/monsterrolodex.png",
@@ -90,7 +100,7 @@ module.exports = [
     },
   },
   {
-    id: 10,
+    id: 11,
     name: "Express + MongoDB + Mongoose",
     desc: "It contains all my express, Mongo and Mongoose projects. Little UI but if you like CRUD and Restful Routes. This is it!!",
     image: "/images/projects/expressmongoose.png",
@@ -100,7 +110,7 @@ module.exports = [
     },
   },
   {
-    id: 11,
+    id: 12,
     name: "Stop Watch App",
     desc: "It is an Accurate Stop Watch App with lap timer functionality. It has quick Reset too",
     image: "/images/projects/stopwatchapp.png",
@@ -110,7 +120,7 @@ module.exports = [
     },
   },
   {
-    id: 12,
+    id: 13,
     name: "Language Guesser",
     desc: "A Simple language gusser in express.js/node.js using franc and langs",
     image: "/images/projects/languageguesser.png",
@@ -149,14 +159,14 @@ module.exports = [
       code: "https://github.com/Anunay-Anand/fruits-game",
     },
   },
-  // {
-  //   id: 16,
-  //   name: "Math game",
-  //   desc: "It is a basic maths multiplication game using javaScript. It has a timer and scorekeeper",
-  //   image: "/images/projects/math.png",
-  //   links: {
-  //     view: "https://anunay-anand.github.io/MathsGame/",
-  //     code: "https://github.com/Anunay-Anand/MathsGame",
-  //   },
-  // },
+  {
+    id: 16,
+    name: "Math game",
+    desc: "It is a basic maths multiplication game using javaScript. It has a timer and scorekeeper",
+    image: "/images/projects/math.png",
+    links: {
+      view: "https://anunay-anand.github.io/MathsGame/",
+      code: "https://github.com/Anunay-Anand/MathsGame",
+    },
+  },
 ];
