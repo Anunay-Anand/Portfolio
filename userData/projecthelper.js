@@ -81,7 +81,7 @@ module.exports = [
   },
   {
     id: 9,
-    name: "Movie Fetch & Store (React + Firebase)",
+    name: "Movie Fetch & Store (Firebase)",
     desc: "A prefect guide to Restful routes of how firebase storage works with Axios for CRUD requests",
     image: "/images/projects/movieStorage.png",
     links: {
