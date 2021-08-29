@@ -81,6 +81,16 @@ module.exports = [
   },
   {
     id: 9,
+    name: "Movie Fetch & Store (React + Firebase)",
+    desc: "A prefect guide to Restful routes of how firebase storage works with Axios for CRUD requests",
+    image: "/images/projects/movieStorage.png",
+    links: {
+      view: "https://github.com/Anunay-Anand/React-Complete-Guide",
+      code: "https://github.com/Anunay-Anand/React-Complete-Guide",
+    },
+  },
+  {
+    id: 10,
     name: "Mobile Shop",
     desc: "A Mobile Shop website with multiple categories filter functionality and much more. It's lovely isn't it",
     image: "/images/projects/mobileshop.png",
@@ -90,7 +100,7 @@ module.exports = [
     },
   },
   {
-    id: 10,
+    id: 11,
     name: "Monster Rolodex (React)",
     desc: "A React Project using Monster Api. Where you can select your fav Monster",
     image: "/images/projects/monsterrolodex.png",
@@ -100,7 +110,7 @@ module.exports = [
     },
   },
   {
-    id: 11,
+    id: 12,
     name: "Express + MongoDB + Mongoose",
     desc: "It contains all my express, Mongo and Mongoose projects. Little UI but if you like CRUD and Restful Routes. This is it!!",
     image: "/images/projects/expressmongoose.png",
@@ -110,7 +120,7 @@ module.exports = [
     },
   },
   {
-    id: 12,
+    id: 13,
     name: "Stop Watch App",
     desc: "It is an Accurate Stop Watch App with lap timer functionality. It has quick Reset too",
     image: "/images/projects/stopwatchapp.png",
@@ -120,7 +130,7 @@ module.exports = [
     },
   },
   {
-    id: 13,
+    id: 14,
     name: "Language Guesser",
     desc: "A Simple language gusser in express.js/node.js using franc and langs",
     image: "/images/projects/languageguesser.png",
@@ -130,7 +140,7 @@ module.exports = [
     },
   },
   {
-    id: 13,
+    id: 15,
     name: "Score Keeper",
     desc: "A Simple JavaScript, Css and HTML website with score keeping and Reset functionality.",
     image: "/images/projects/scorekeeper.png",
@@ -140,7 +150,7 @@ module.exports = [
     },
   },
   {
-    id: 14,
+    id: 16,
     name: "Lovely Project",
     desc: "A beautiful project with video background fully responsive with Bootstrap and Media queries.",
     image: "/images/projects/lovelyproject.png",
@@ -150,7 +160,7 @@ module.exports = [
     },
   },
   {
-    id: 15,
+    id: 17,
     name: "Fruit game",
     desc: "It is a very low budget rip off of fruit ninja with sounds and score keeping.",
     image: "/images/projects/fruitninja.png",
@@ -160,7 +170,7 @@ module.exports = [
     },
   },
   {
-    id: 16,
+    id: 18,
     name: "Math game",
     desc: "It is a basic maths multiplication game using javaScript. It has a timer and scorekeeper",
     image: "/images/projects/math.png",
