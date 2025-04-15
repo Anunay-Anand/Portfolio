@@ -59,11 +59,11 @@ document.addEventListener("visibilitychange", function () {
 // Effects or texts from Typed.js Api
 let typed = new Typed(".typing-text", {
   strings: [
-    "desining",
     "web development",
     "backend development",
     "full stack development",
     "Server/Client side scripting",
+    "UI/UX"
   ],
   loop: true,
   typeSpeed: 50,

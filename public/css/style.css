@@ -557,11 +557,11 @@ header .navbar ul li a:hover {
   background: #2962ff;
 }
 .skills .container .col .bar .javascript:before {
-  width: 90%;
+  width: 95%;
   background: #ffd900;
 }
 .skills .container .col .bar .bootstrap:before {
-  width: 85%;
+  width: 88%;
   background: #3d10dd;
 }
 .skills .container .col .bar .php:before {
@@ -569,7 +569,7 @@ header .navbar ul li a:hover {
   background: #8054c7;
 }
 .skills .container .col .bar .mysqli:before {
-  width: 82%;
+  width: 80%;
   background: #f38b03;
 }
 .skills .container .col .bar .reactjs:before {
@@ -577,15 +577,15 @@ header .navbar ul li a:hover {
   background: #2962ff;
 }
 .skills .container .col .bar .mongo:before {
-  width: 90%;
+  width: 85%;
   background: #ce0505;
 }
 .skills .container .col .bar .express:before {
-  width: 90%;
+  width: 95%;
   background: #f7d203;
 }
 .skills .container .col .bar .mongoose:before {
-  width: 85%;
+  width: 90%;
   background: #2fdf7e;
 }
 .skills .container .col .bar .nodejs:before {
@@ -593,16 +593,44 @@ header .navbar ul li a:hover {
   background: #298521;
 }
 .skills .container .col .bar .vcs:before {
-  width: 88%;
+  width: 90%;
   background: #f14e32;
 }
 .skills .container .col .bar .sass:before {
-  width: 96%;
+  width: 80%;
   background: #1771e7;
 }
-.skills .container .col .bar .heroku:before {
-  width: 75%;
-  background: #ffae00;
+.skills .container .col .bar .docker:before {
+  width: 85%;
+  background: #0db7ed;
+}
+.skills .container .col .bar .kubernetes:before {
+  width: 80%;
+  background: #326ce5;
+}
+.skills .container .col .bar .springboot:before {
+  width: 80%;
+  background: #6db33f;
+}
+.skills .container .col .bar .angular:before {
+  width: 70%;
+  background: #dd0031;
+}
+.skills .container .col .bar .splunk:before {
+  width: 82%;
+  background: #ff6c00;
+}
+.skills .container .col .bar .typescript:before {
+  width: 80%;
+  background: #007acc;
+}
+.skills .container .col .bar .progressive-ui:before {
+  width: 85%;
+  background: #5a0fc8;
+}
+.skills .container .col .bar .integrations:before {
+  width: 85%;
+  background: #4a5e6b;
 }
 
 /* skills media queries starts*/
