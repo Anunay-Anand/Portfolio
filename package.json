@@ -1,20 +1,25 @@
 {
-  "name": "my-portfolio",
+  "name": "keith-thomas-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Static portfolio site for Keith Thomas.",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "astro",
+    "three.js",
+    "unity",
+    "webxr"
+  ],
+  "author": "Keith Thomas",
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "ejs-mate": "^3.0.0",
-    "express": "^4.17.1",
-    "method-override": "^3.0.0",
-    "nodemailer": "^6.8.0"
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^6.4.5"
   }
 }

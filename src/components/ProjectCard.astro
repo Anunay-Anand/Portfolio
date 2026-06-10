@@ -1,0 +1,27 @@
+---
+const { project } = Astro.props;
+---
+<article class="box tilt">
+  <img draggable="false" src={project.image} alt={project.imageAlt} loading="lazy" />
+  <div class="content">
+    <div class="tag">
+      <h3>{project.name}</h3>
+    </div>
+    <div class="desc">
+      <p>{project.desc}</p>
+      <div class="technology" aria-label={`${project.name} technologies`}>
+        {
+          project.tech.map((item) => (
+            <div class="skillbar" style={`transform: scale(${project.techScale});`}>
+              <div class="info">
+                <span>{item.name}</span>
+                <span>{item.value}</span>
+              </div>
+              <div class="line" style={`width: ${item.value}; background: ${item.color};`}></div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</article>

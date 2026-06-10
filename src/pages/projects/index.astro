@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { projects } from "../../data/projects";
+
+const siteUrl = "https://keiththomas.dev";
+const title = "Projects | Keith Thomas";
+const description =
+  "Selected freelance and independent projects by Keith Thomas, including 3D web, Unity, WebXR, AR/VR, and interactive product work.";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Keith Thomas Projects",
+  url: `${siteUrl}/projects/`,
+  hasPart: projects.map((project) => ({
+    "@type": "CreativeWork",
+    name: project.name,
+    description: project.desc,
+    image: `${siteUrl}${project.image}`,
+  })),
+};
+---
+<BaseLayout title={title} description={description} canonical={`${siteUrl}/projects/`} structuredData={structuredData}>
+  <section class="work" id="work" data-aos="fade-in" data-aos-delay="300">
+    <h1 class="heading"><i class="fas fa-laptop-code" aria-hidden="true"></i> Projects <span>Made</span></h1>
+
+    <div class="box-container">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+    <div class="backbtn">
+      <a href="/" class="btn">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </section>
+
+  <a href="#work" class="fas fa-angle-up" id="scroll-top" aria-label="Back to top"></a>
+</BaseLayout>

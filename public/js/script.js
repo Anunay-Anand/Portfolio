@@ -1,5 +1,7 @@
 // Scroll Animation AOS init
-AOS.init();
+if (window.AOS) {
+  AOS.init();
+}
 
 // Using Jquery to define Scroll spy and set active class
 $(document).ready(function () {
@@ -34,10 +36,20 @@ $(document).ready(function () {
 
   // smooth scrolling
   $('a[href*="#"]').on("click", function (e) {
+    const target = new URL(this.href, window.location.href);
+    if (target.pathname !== window.location.pathname) {
+      return;
+    }
+
+    const hash = target.hash;
+    if (!hash || !$(hash).length) {
+      return;
+    }
+
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: $($(this).attr("href")).offset().top,
+        scrollTop: $(hash).offset().top,
       },
       500,
       "linear"
@@ -47,30 +59,32 @@ $(document).ready(function () {
 
 
 // Effects or texts from Typed.js Api
-let typed = new Typed(".typing-text", {
-  strings: [
-    "3D websites",
-    "games",
-    "Unity plug-ins",
-    "metaverse stuff"
-  ],
-  loop: true,
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 500,
-});
+if (window.Typed && document.querySelector(".typing-text")) {
+  new Typed(".typing-text", {
+    strings: ["3D websites", "games", "Unity plug-ins", "metaverse stuff"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+  });
+}
 // <!-- typed js effect ends -->
 
 // <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  max: 20,
-  speed: 400,
-});
+if (window.VanillaTilt) {
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 20,
+    speed: 400,
+  });
+}
 // <!-- tilt js effect ends -->
 
 // pre loader start
 function loader() {
-  document.querySelector(".loader-container").classList.add("fade-out");
+  const loaderContainer = document.querySelector(".loader-container");
+  if (loaderContainer) {
+    loaderContainer.classList.add("fade-out");
+  }
 }
 function fadeOut() {
   setInterval(loader, 500);
@@ -79,43 +93,45 @@ window.onload = fadeOut;
 // pre loader end
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
-  origin: "top",
-  distance: "80px",
-  duration: 1000,
-  reset: true,
-});
+if (window.ScrollReveal) {
+  const srtop = ScrollReveal({
+    origin: "top",
+    distance: "80px",
+    duration: 1000,
+    reset: true,
+  });
 
-/* SCROLL HOME */
-srtop.reveal(".home .content h3", { delay: 200 });
-srtop.reveal(".home .content p", { delay: 200 });
-srtop.reveal(".home .content .btn", { delay: 200 });
+  /* SCROLL HOME */
+  srtop.reveal(".home .content h1", { delay: 200 });
+  srtop.reveal(".home .content p", { delay: 200 });
+  srtop.reveal(".home .content .btn", { delay: 200 });
 
-srtop.reveal(".home .image", { delay: 400 });
-srtop.reveal(".home .linkedin", { interval: 600 });
-srtop.reveal(".home .github", { interval: 800 });
-srtop.reveal(".home .twitter", { interval: 1000 });
-srtop.reveal(".home .telegram", { interval: 600 });
-srtop.reveal(".home .instagram", { interval: 600 });
-srtop.reveal(".home .dev", { interval: 600 });
+  srtop.reveal(".home .image", { delay: 400 });
+  srtop.reveal(".home .linkedin", { interval: 600 });
+  srtop.reveal(".home .github", { interval: 800 });
+  srtop.reveal(".home .twitter", { interval: 1000 });
+  srtop.reveal(".home .telegram", { interval: 600 });
+  srtop.reveal(".home .instagram", { interval: 600 });
+  srtop.reveal(".home .dev", { interval: 600 });
 
-/* SCROLL ABOUT */
-srtop.reveal(".about .content h3", { delay: 300 });
-srtop.reveal(".about .content .tag", { delay: 400 });
-srtop.reveal(".about .content p", { delay: 300 });
-srtop.reveal(".about .content .box-container", { delay: 300 });
-srtop.reveal(".about .content .resumebtn", { delay: 300 });
+  /* SCROLL ABOUT */
+  srtop.reveal(".about .content h2", { delay: 300 });
+  srtop.reveal(".about .content .tag", { delay: 400 });
+  srtop.reveal(".about .content p", { delay: 300 });
+  srtop.reveal(".about .content .box-container", { delay: 300 });
+  srtop.reveal(".about .content .resumebtn", { delay: 300 });
 
-/* SCROLL SKILLS */
-srtop.reveal(".skills .container", { interval: 200 });
-srtop.reveal(".skills .container .bar", { delay: 400 });
+  /* SCROLL SKILLS */
+  srtop.reveal(".skills .container", { interval: 200 });
+  srtop.reveal(".skills .container .bar", { delay: 400 });
 
-/* SCROLL EDUCATION */
-srtop.reveal(".education .box", { interval: 200 });
+  /* SCROLL EDUCATION */
+  srtop.reveal(".education .box", { interval: 200 });
 
-/* SCROLL PROJECTS */
-srtop.reveal(".work .box", { interval: 200 });
+  /* SCROLL PROJECTS */
+  srtop.reveal(".work .box", { interval: 200 });
 
-/* SCROLL EXPERIENCE */
-srtop.reveal(".experience .timeline", { delay: 400 });
-srtop.reveal(".experience .timeline .container", { interval: 400 });
+  /* SCROLL EXPERIENCE */
+  srtop.reveal(".experience .timeline", { delay: 400 });
+  srtop.reveal(".experience .timeline .container", { interval: 400 });
+}

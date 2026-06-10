@@ -1,0 +1,216 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/projects";
+
+const featuredProjects = projects.slice(0, 6);
+const siteUrl = "https://keiththomas.dev";
+const title = "Keith Thomas | Freelance 3D Web, Unity, AR/VR Engineer";
+const description =
+  "Keith Thomas is a Chicago-based freelance software engineer building 3D websites, Unity tools, WebXR experiences, AR/VR projects, and interactive web work.";
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Keith Thomas",
+    url: siteUrl,
+    jobTitle: "Freelance Software Engineer",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Chicago",
+      addressRegion: "IL",
+      addressCountry: "US",
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/keith--thomas/",
+      "https://github.com/kryzodoze",
+      "https://twitter.com/Kryzodoze",
+    ],
+    knowsAbout: ["Unity", "Three.js", "Babylon.js", "WebXR", "Virtual Reality", "Augmented Reality"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Keith Thomas Freelance Software Engineering",
+    url: siteUrl,
+    areaServed: "United States",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Chicago",
+      addressRegion: "IL",
+      addressCountry: "US",
+    },
+    serviceType: ["3D web development", "Unity development", "AR/VR development", "WebXR development"],
+  },
+];
+---
+<BaseLayout title={title} description={description} canonical={`${siteUrl}/`} structuredData={structuredData}>
+  <div class="loader-container">
+    <img draggable="false" src="/images/preloader.gif" alt="" />
+  </div>
+
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h1>Hey!<br />I'm Keith <span>Thomas</span></h1>
+      <p>I create <span class="typing-text"></span></p>
+      <div class="socials">
+        <ul class="social-icons">
+          <li>
+            <a
+              class="linkedin"
+              href="https://www.linkedin.com/in/keith--thomas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Keith Thomas on LinkedIn"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="github"
+              href="https://github.com/kryzodoze"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Keith Thomas on GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="twitter"
+              href="https://twitter.com/Kryzodoze"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Keith Thomas on X"
+            >
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="/images/profilePhoto2.png" alt="Keith Thomas" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt" aria-hidden="true"></i> About <span>Me</span></h2>
+
+    <div class="row">
+      <div class="image">
+        <img draggable="false" class="tilt" src="/images/profilePhoto3.png" alt="Keith Thomas portrait" />
+      </div>
+      <div class="content">
+        <h2>I'm Keith</h2>
+        <span class="tag">Freelance Software Engineer</span>
+        <p>
+          I left big tech a few years ago to pursue my dream of being my own boss.
+          Since then I've taken on a number of clients, and am always looking for more.
+          I'm most comfortable in a game engine, or at least a 3D library like
+          three.js or Babylon.js. Reach out for a quote or just to say hi. I'm happy
+          to chat about the problem you're facing if I have the time.
+        </p>
+
+        <div class="box-container">
+          <div class="box">
+            <p><span>Age:</span> 31</p>
+            <p><span>Work experience:</span> 7 years</p>
+          </div>
+          <div class="box">
+            <p>
+              <span>Email:</span>
+              <span class="nonSelectable">
+                keithwthomas1
+                <img width="16" height="16" src="/images/@.png" alt="at" />
+                gmail.com
+              </span>
+            </p>
+            <p><span>Place:</span> Chicago, IL</p>
+          </div>
+        </div>
+        <div class="resumebtn">
+          <a href="/pdf/2022FallResume.pdf" class="btn" download>
+            <span>Download Resume</span>
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code" aria-hidden="true"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container">
+      {featuredProjects.map((project) => <ProjectCard project={project} />)}
+    </div>
+
+    <div class="viewall">
+      <a href="/projects/" class="btn">
+        <span>View All</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code" aria-hidden="true"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="skillbar">
+            <div class="info"><i class="fab fa-unity"><span>Unity</span></i><span>9/10</span></div>
+            <div class="line unity"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>Babylon.js</span></i><span>8/10</span></div>
+            <div class="line babylonjs"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>Virtual Reality</span></i><span>8/10</span></div>
+            <div class="line virtualreality"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>C#</span></i><span>8/10</span></div>
+            <div class="line csharp"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>HTML/CSS</span></i><span>5/10</span></div>
+            <div class="line htmlCss"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>Three.js</span></i><span>9/10</span></div>
+            <div class="line threejs"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>WebXR</span></i><span>7/10</span></div>
+            <div class="line webxr"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>Augmented Reality</span></i><span>6/10</span></div>
+            <div class="line augmentedreality"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab fa-js-square"><span>Javascript</span></i><span>8/10</span></div>
+            <div class="line javascript"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab fa-react"><span>ReactJS</span></i><span>4/10</span></div>
+            <div class="line reactjs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="#home" class="fas fa-angle-up" id="scroll-top" aria-label="Back to top"></a>
+</BaseLayout>
