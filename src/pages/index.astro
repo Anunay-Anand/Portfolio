@@ -5,16 +5,16 @@ import { projects } from "../data/projects";
 
 const featuredProjects = projects.slice(0, 6);
 const siteUrl = "https://keiththomas.dev";
-const title = "Keith Thomas | Freelance 3D Web, Unity, AR/VR Engineer";
+const title = "Keith Thomas' Website";
 const description =
-  "Keith Thomas is a Chicago-based freelance software engineer building 3D websites, Unity tools, WebXR experiences, AR/VR projects, and interactive web work.";
+  "Keith Thomas is a Chicago-based senior software engineer building 3D websites, Unity tools, WebXR experiences, AR/VR projects, and interactive web work.";
 const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Keith Thomas",
     url: siteUrl,
-    jobTitle: "Freelance Software Engineer",
+    jobTitle: "Senior Software Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Chicago",
@@ -26,12 +26,12 @@ const structuredData = [
       "https://github.com/kryzodoze",
       "https://twitter.com/Kryzodoze",
     ],
-    knowsAbout: ["Unity", "Three.js", "Babylon.js", "WebXR", "Virtual Reality", "Augmented Reality"],
+    knowsAbout: ["Three.js", "Unity", "Babylon.js", "WebXR", "Virtual Reality", "Augmented Reality"],
   },
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Keith Thomas Freelance Software Engineering",
+    name: "Keith Thomas Software Engineering",
     url: siteUrl,
     areaServed: "United States",
     address: {
@@ -107,13 +107,12 @@ const structuredData = [
       </div>
       <div class="content">
         <h2>I'm Keith</h2>
-        <span class="tag">Freelance Software Engineer</span>
+        <span class="tag">Senior Software Engineer</span>
         <p>
-          I left big tech a few years ago to pursue my dream of being my own boss.
-          Since then I've taken on a number of clients, and am always looking for more.
-          I'm most comfortable in a game engine, or at least a 3D library like
-          three.js or Babylon.js. Reach out for a quote or just to say hi. I'm happy
-          to chat about the problem you're facing if I have the time.
+		  I specialize in 3D engineering on the web. I like to build tools and
+		  games and simulations utilizing libraries like three.js or babylon.js.
+		  I'm open to freelance work, but am also employed currently at 
+		  DraftKings. Happy to chat, drop me a line.
         </p>
 
         <div class="box-container">
@@ -134,7 +133,7 @@ const structuredData = [
           </div>
         </div>
         <div class="resumebtn">
-          <a href="/pdf/2022FallResume.pdf" class="btn" download>
+          <a href="/pdf/2026KeithResume.pdf" class="btn" download>
             <span>Download Resume</span>
             <i class="fas fa-chevron-right" aria-hidden="true"></i>
           </a>
@@ -165,7 +164,7 @@ const structuredData = [
       <div class="row">
         <div class="col">
           <div class="skillbar">
-            <div class="info"><i class="fab fa-unity"><span>Unity</span></i><span>9/10</span></div>
+            <div class="info"><i class="fab fa-unity"><span>Unity</span></i><span>10/10</span></div>
             <div class="line unity"></div>
           </div>
           <div class="skillbar">
@@ -173,39 +172,23 @@ const structuredData = [
             <div class="line babylonjs"></div>
           </div>
           <div class="skillbar">
-            <div class="info"><i class="fab"><span>Virtual Reality</span></i><span>8/10</span></div>
-            <div class="line virtualreality"></div>
-          </div>
-          <div class="skillbar">
-            <div class="info"><i class="fab"><span>C#</span></i><span>8/10</span></div>
+            <div class="info"><i class="fab"><span>Writing Shaders</span></i><span>7/10</span></div>
             <div class="line csharp"></div>
-          </div>
-          <div class="skillbar">
-            <div class="info"><i class="fab"><span>HTML/CSS</span></i><span>5/10</span></div>
-            <div class="line htmlCss"></div>
           </div>
         </div>
 
         <div class="col">
           <div class="skillbar">
-            <div class="info"><i class="fab"><span>Three.js</span></i><span>9/10</span></div>
+            <div class="info"><i class="fab"><span>Three.js</span></i><span>10/10</span></div>
             <div class="line threejs"></div>
+          </div>
+          <div class="skillbar">
+            <div class="info"><i class="fab"><span>Creating AI Agents</span></i><span>7/10</span></div>
+            <div class="line augmentedreality"></div>
           </div>
           <div class="skillbar">
             <div class="info"><i class="fab"><span>WebXR</span></i><span>7/10</span></div>
             <div class="line webxr"></div>
-          </div>
-          <div class="skillbar">
-            <div class="info"><i class="fab"><span>Augmented Reality</span></i><span>6/10</span></div>
-            <div class="line augmentedreality"></div>
-          </div>
-          <div class="skillbar">
-            <div class="info"><i class="fab fa-js-square"><span>Javascript</span></i><span>8/10</span></div>
-            <div class="line javascript"></div>
-          </div>
-          <div class="skillbar">
-            <div class="info"><i class="fab fa-react"><span>ReactJS</span></i><span>4/10</span></div>
-            <div class="line reactjs"></div>
           </div>
         </div>
       </div>
